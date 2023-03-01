@@ -5,18 +5,29 @@ This is a simple firmware that enables a lot of advanced features of marlin for 
 
 
 ## Extra Features
+
 Bed Tramming
+
 Adjust Max Speeds
+
 Jerk
+
 Acceleration
+
 Probe Offsets
+
 Steps
+
 Auto Temp
+
 Safe Probe Z-Homing
-High speed probe
+
+High speed probe (Really fast) [Toggle it in the BLtouch menu in configuration]
+
 Assisted tramming
-Selectable mesh points from 2x2 to 9x9
+
 Probe Stow/Deploy in Probe Settings menu
+
 More stability
 
 
