@@ -72,4 +72,5 @@ Once again this issue should not occur, however I wanted to leave a fix just in 
 
 ## Credits
 This is a Marlin based firmware and is maintained by [Benjy1044](https://github.com/Benjy1044)
+
 [Marlin](https://marlinfw.org) is open source.
