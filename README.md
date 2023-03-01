@@ -97,7 +97,7 @@ Once again this issue should not occur, however I wanted to leave a fix just in 
 
 
 
-## Good Gcode is attatched (Auto bed levels each time so does add around 3-5 mins onto every print)
+## Good Gcode is attatched (Auto bed levels each time With fast probing, So doesn't add much onto time at all) (43 seconds on my setup)
 
 [gcode start.txt](https://github.com/Benjy1044/E3NeoCFW/files/10856785/gcode.start.txt)
 [gcode stop.txt](https://github.com/Benjy1044/E3NeoCFW/files/10856786/gcode.stop.txt)
