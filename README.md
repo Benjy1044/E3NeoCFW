@@ -22,12 +22,19 @@ More stability
 
 ## Installation Steps
 0 - Optional -> right down your current z offset (very useful)
+
 1 - Click release on the right, and download the latest .bin file
+
 2 - Put the .bin file on your micro sd card
+
 3 - Ensuring the printer is fully off plug in the sd card and then turn it on
+
 4 - the screen will be blank for roughly 45 seconds and then you will see the E3CFW logo followed by marling
+
 5 - Press your encoder down, go to "configuration", go to "Advanced Settings" and then press "Initilaize EEPROM" Then "init"
+
 5b - If you followed step 0 you can now go to "Motion" -> "Bed Leveling" -> "Probe Z Offset" -> Insert your value from step 0 press the encoder then go down in the same page to "Store Settings"!
+
 7 - Optional - Enable Power Outage Resume -> "configuration" -> Press on "Power Outage" -> Scroll down and click "Store Settings"
 
 
