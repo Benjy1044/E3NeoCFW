@@ -104,3 +104,7 @@ Once again this issue should not occur, however I wanted to leave a fix just in 
 This is a Marlin based firmware and is maintained by [Benjy1044](https://github.com/Benjy1044)
 
 [Marlin](https://marlinfw.org) is open source.
+
+## Notes
+This is for STM32F103RE boards (Creality V4.2.2 - Found on all Ender 3 Neo's)
+THIS IS FOR THE ENDER 3 NEO NOT V2 NEO.
