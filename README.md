@@ -35,7 +35,7 @@ More stability
 
 
 ## Installation Steps
-0 - Optional -> right down your current z offset (very useful)
+0 - Optional -> write down your current z offset (very useful)
 
 1 - Click release on the right, and download the latest .bin file
 
