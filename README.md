@@ -1,5 +1,5 @@
 # E3NeoCFW
-Ender-3 Neo Custom Firmware
+Ender-3 (Ender 3 , E3) Neo Custom Firmware
 
 This is a simple firmware that enables a lot of advanced features of marlin for the Ender-3 Neo, This firmware is in active development and will be updated frequently.
 
