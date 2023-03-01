@@ -5,10 +5,22 @@ This is a simple firmware that enables a lot of advanced features of marlin for 
 
 
 ## Extra Features
-Bed Tramming, Adjust Max Speeds, Jerk, Acceleration, Probe Offsets, Steps, Auto Temp + More stability.
+Bed Tramming
+Adjust Max Speeds
+Jerk
+Acceleration
+Probe Offsets
+Steps
+Auto Temp
+Safe Probe Z-Homing
+High speed probe
+Assisted tramming
+Selectable mesh points from 2x2 to 9x9
+Probe Stow/Deploy in Probe Settings menu
+More stability
 
 
-##Installation Steps
+## Installation Steps
 0 - Optional -> right down your current z offset (very useful)
 1 - Click release on the right, and download the latest .bin file
 2 - Put the .bin file on your micro sd card
