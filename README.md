@@ -4,7 +4,7 @@ Ender-3 Neo Custom Firmware
 This is a simple firmware that enables a lot of advanced features of marlin for the Ender-3 Neo, This firmware is in active development and will be updated frequently.
 
 
-##Extra Features
+## Extra Features
 Bed Tramming, Adjust Max Speeds, Jerk, Acceleration, Probe Offsets, Steps, Auto Temp + More stability.
 
 
@@ -19,7 +19,7 @@ Bed Tramming, Adjust Max Speeds, Jerk, Acceleration, Probe Offsets, Steps, Auto 
 7 - Optional - Enable Power Outage Resume -> "configuration" -> Press on "Power Outage" -> Scroll down and click "Store Settings"
 
 
-##Setting your Z Offset now!
+## Setting your Z Offset now!
 1 - Auto home the printer (Same method as before CFW)
   Motion -> Auto Home (Wait for it to home)
   Motion -> Move Axis -> Move Z -> 0
@@ -40,7 +40,7 @@ Bed Tramming, Adjust Max Speeds, Jerk, Acceleration, Probe Offsets, Steps, Auto 
   Motion -> Bed Leveling -> Probe Z Offset -> move the dial counter clockwise to lower the nozzle and clockwise to raise it, you want the paper to have a slight   resistance and a slight "ringing" feeling.
   
   
-##Check if your bed is centered.
+## Check if your bed is centered.
   In rare instances your nozzle when the printer reads 110x110 will not be centered (This should not happen but is easy to fix), Grab some masking tape put it on your bed and using a pen draw a cross, Place the bed on your printer and auto home.
   
   After auto home move your axis to X110 Y110 Z1, (If your nozzle is directly where your cross intersects great you can now enjoy printing!
@@ -64,7 +64,7 @@ Once again this issue should not occur, however I wanted to leave a fix just in 
 
 
 
-##Good Gcode is attatched (Auto bed levels each time so does add around 3-5 mins onto every print)
+## Good Gcode is attatched (Auto bed levels each time so does add around 3-5 mins onto every print)
 
 [gcode start.txt](https://github.com/Benjy1044/E3NeoCFW/files/10856785/gcode.start.txt)
 [gcode stop.txt](https://github.com/Benjy1044/E3NeoCFW/files/10856786/gcode.stop.txt)
