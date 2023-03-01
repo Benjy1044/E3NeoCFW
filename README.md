@@ -4,11 +4,23 @@ Ender-3 Neo Custom Firmware
 This is a simple firmware that enables a lot of advanced features of marlin for the Ender-3 Neo, This firmware is in active development and will be updated frequently.
 
 
-Extra Features
-Bed Tramming, Adjust Max Speeds, Jerk, Acceleration, Probe Offsets, Steps, Auto Temp + More stability.
+## Extra Features
+Bed Tramming
+Adjust Max Speeds
+Jerk
+Acceleration
+Probe Offsets
+Steps
+Auto Temp
+Safe Probe Z-Homing
+High speed probe
+Assisted tramming
+Selectable mesh points from 2x2 to 9x9
+Probe Stow/Deploy in Probe Settings menu
+More stability
 
 
-Installation Steps
+## Installation Steps
 0 - Optional -> right down your current z offset (very useful)
 1 - Click release on the right, and download the latest .bin file
 2 - Put the .bin file on your micro sd card
@@ -19,7 +31,7 @@ Installation Steps
 7 - Optional - Enable Power Outage Resume -> "configuration" -> Press on "Power Outage" -> Scroll down and click "Store Settings"
 
 
-Setting your Z Offset now!
+## Setting your Z Offset now!
 1 - Auto home the printer (Same method as before CFW)
   Motion -> Auto Home (Wait for it to home)
   Motion -> Move Axis -> Move Z -> 0
@@ -40,7 +52,7 @@ Setting your Z Offset now!
   Motion -> Bed Leveling -> Probe Z Offset -> move the dial counter clockwise to lower the nozzle and clockwise to raise it, you want the paper to have a slight   resistance and a slight "ringing" feeling.
   
   
-Check if your bed is centered.
+## Check if your bed is centered.
   In rare instances your nozzle when the printer reads 110x110 will not be centered (This should not happen but is easy to fix), Grab some masking tape put it on your bed and using a pen draw a cross, Place the bed on your printer and auto home.
   
   After auto home move your axis to X110 Y110 Z1, (If your nozzle is directly where your cross intersects great you can now enjoy printing!
@@ -64,40 +76,13 @@ Once again this issue should not occur, however I wanted to leave a fix just in 
 
 
 
-Good Gcode (Auto bed levels each time so does add around 3-5 mins onto every print)
+## Good Gcode is attatched (Auto bed levels each time so does add around 3-5 mins onto every print)
 
-START
-
-G92 E0 ; Reset Extruder
-M140 S{material_bed_temperature_layer_0} ;
-M104 S{material_print_temperature_layer_0} ;
-G28 ;
-M109 S{material_print_temperature_layer_0} ;
-M190 S{material_bed_temperature_layer_0} ;
-G29 ; AUTO BED LEVELING REMOVE IF YOU DO NOT WANT IT TO RUN AT THE START OF EVERY PRINT
-M500 ; Save auto bed leveling results remove this if you removed G29
-G92 E0 ;
-G1 Z1.0 F3000 ;
-G1 X0.1 Y20 Z0.3 F5000.0 ;
-G1 X0.1 Y200.0 Z0.3 F1500.0 E15 ;
-G1 X0.4 Y200.0 Z0.3 F5000.0 ;
-G1 X0.4 Y20 Z0.3 F1500.0 E30 ;
-G92 E0 ;
-G1 Z1.0 F3000 ;
+[gcode start.txt](https://github.com/Benjy1044/E3NeoCFW/files/10856785/gcode.start.txt)
+[gcode stop.txt](https://github.com/Benjy1044/E3NeoCFW/files/10856786/gcode.stop.txt)
 
 
+## Credits
+This is a Marlin based firmware and is maintained by [Benjy1044](https://github.com/Benjy1044)
 
-STOP
-
-M140 S0 ;
-M106 S0 ;
-M104 S0 ;
-G91 ;
-G1 E-2 F2700 ;
-G1 E-2 Z0.2 F2400 ;
-G1 X5 Y5 F3000 ;
-G1 Z10 ;
-G90 ;
-M300 S440 P500 ;
-G1 X0 Y{machine_depth} ;
-M84 X Y E ;
+[Marlin](https://marlinfw.org) is open source.
