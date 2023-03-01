@@ -31,6 +31,9 @@ Probe Stow/Deploy in Probe Settings menu
 More stability
 
 
+[Discord Support Server](https://discord.gg/FVmPKeGane)
+
+
 ## Installation Steps
 0 - Optional -> right down your current z offset (very useful)
 
