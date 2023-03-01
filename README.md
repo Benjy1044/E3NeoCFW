@@ -64,40 +64,7 @@ Once again this issue should not occur, however I wanted to leave a fix just in 
 
 
 
-Good Gcode (Auto bed levels each time so does add around 3-5 mins onto every print)
+Good Gcode is attatched (Auto bed levels each time so does add around 3-5 mins onto every print)
 
-START
-
-G92 E0 ; Reset Extruder
-M140 S{material_bed_temperature_layer_0} ;
-M104 S{material_print_temperature_layer_0} ;
-G28 ;
-M109 S{material_print_temperature_layer_0} ;
-M190 S{material_bed_temperature_layer_0} ;
-G29 ; AUTO BED LEVELING REMOVE IF YOU DO NOT WANT IT TO RUN AT THE START OF EVERY PRINT
-M500 ; Save auto bed leveling results remove this if you removed G29
-G92 E0 ;
-G1 Z1.0 F3000 ;
-G1 X0.1 Y20 Z0.3 F5000.0 ;
-G1 X0.1 Y200.0 Z0.3 F1500.0 E15 ;
-G1 X0.4 Y200.0 Z0.3 F5000.0 ;
-G1 X0.4 Y20 Z0.3 F1500.0 E30 ;
-G92 E0 ;
-G1 Z1.0 F3000 ;
-
-
-
-STOP
-
-M140 S0 ;
-M106 S0 ;
-M104 S0 ;
-G91 ;
-G1 E-2 F2700 ;
-G1 E-2 Z0.2 F2400 ;
-G1 X5 Y5 F3000 ;
-G1 Z10 ;
-G90 ;
-M300 S440 P500 ;
-G1 X0 Y{machine_depth} ;
-M84 X Y E ;
+[gcode start.txt](https://github.com/Benjy1044/E3NeoCFW/files/10856785/gcode.start.txt)
+[gcode stop.txt](https://github.com/Benjy1044/E3NeoCFW/files/10856786/gcode.stop.txt)
