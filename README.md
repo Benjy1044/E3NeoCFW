@@ -107,4 +107,5 @@ This is a Marlin based firmware and is maintained by [Benjy1044](https://github.
 
 ## Notes
 This is for STM32F103RE boards (Creality V4.2.2 - Found on all Ender 3 Neo's)
+
 THIS IS FOR THE ENDER 3 NEO NOT V2 NEO.
