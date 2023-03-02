@@ -1482,7 +1482,7 @@
 #endif // HAS_DISPLAY || DWIN_LCD_PROUI
 
 // Add 'M73' to set print job progress, overrides Marlin's built-in estimate
-//#define SET_PROGRESS_MANUALLY
+#define SET_PROGRESS_MANUALLY
 #if ENABLED(SET_PROGRESS_MANUALLY)
   #define SET_PROGRESS_PERCENT            // Add 'P' parameter to set percentage done
   #define SET_REMAINING_TIME              // Add 'R' parameter to set remaining time
@@ -3848,15 +3848,15 @@
  * Host Prompt Support enables Marlin to use the host for user prompts so
  * filament runout and other processes can be managed from the host side.
  */
-//#define HOST_ACTION_COMMANDS
+#define HOST_ACTION_COMMANDS
 #if ENABLED(HOST_ACTION_COMMANDS)
-  //#define HOST_PAUSE_M76                // Tell the host to pause in response to M76
+  #define HOST_PAUSE_M76                // Tell the host to pause in response to M76
   //#define HOST_PROMPT_SUPPORT           // Initiate host prompts to get user feedback
   #if ENABLED(HOST_PROMPT_SUPPORT)
-    //#define HOST_STATUS_NOTIFICATIONS   // Send some status messages to the host as notifications
+    #define HOST_STATUS_NOTIFICATIONS   // Send some status messages to the host as notifications
   #endif
-  //#define HOST_START_MENU_ITEM          // Add a menu item that tells the host to start
-  //#define HOST_SHUTDOWN_MENU_ITEM       // Add a menu item that tells the host to shut down
+  #define HOST_START_MENU_ITEM          // Add a menu item that tells the host to start
+  #define HOST_SHUTDOWN_MENU_ITEM       // Add a menu item that tells the host to shut down
 #endif
 
 // @section extras
@@ -3866,7 +3866,7 @@
  *
  * Implement M486 to allow Marlin to skip objects
  */
-//#define CANCEL_OBJECTS
+#define CANCEL_OBJECTS
 #if ENABLED(CANCEL_OBJECTS)
   #define CANCEL_OBJECTS_REPORTING // Emit the current object as a status message
 #endif
